@@ -9,8 +9,9 @@ import Foundation
 import UIKit
 
 protocol HomeViewToPresenterProtocol: AnyObject {
-    func searchForMovieName(txt: String)
-    func getAllMovies()
+    func getAllMovies(txt: String?)
+    func getNextMovies(txt: String?)
+    func moveToMovieDetail(nav: UINavigationController, movie: HomeMovieModel)
 }
 
 protocol HomePresenterToViewProtocol: AnyObject {
@@ -23,10 +24,10 @@ protocol HomePresenterToRouterProtocol {
 }
 
 protocol HomeItreatorToPresenterProtocol: AnyObject {
-    func didFetched(movies: [Movie])
+    func didFetched(movies: [Movie], paginationData: Pagination)
     func errorOccurecd(error: Error)
 }
 
 protocol HomePresenterToItreatorProtocol {
-    func fetchMovies(txt: String?)
+    func fetchMovies(txt: String?, page: Int)
 }

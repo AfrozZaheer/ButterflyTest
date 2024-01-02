@@ -19,6 +19,7 @@ enum Constants {
     //MARK: - Base URLS
     enum URLs: String {
         case baseURL = "https://api.themoviedb.org/3/"
+        case imageBaseURL = "https://image.tmdb.org/t/p/w500"
     }
     
     //MARK: UIViewcControllers Identifiers

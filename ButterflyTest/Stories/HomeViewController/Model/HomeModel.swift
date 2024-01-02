@@ -12,9 +12,10 @@ class HomeMovieModel {
     var image: String?
     var title = ""
     var descp = ""
+    var id: Int?
     
     var imageURL: URL? {
-        var base = Constants.URLs.baseURL.rawValue
+        var base = Constants.URLs.imageBaseURL.rawValue
         guard let image else {return nil}
         base = base + image
         
@@ -25,5 +26,6 @@ class HomeMovieModel {
         self.image = movie.posterPath
         self.title = movie.title ?? ""
         self.descp = movie.overview ?? ""
+        self.id = movie.id
     }
 }

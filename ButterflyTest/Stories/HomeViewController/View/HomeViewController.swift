@@ -26,11 +26,12 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
-        presenter?.getAllMovies()
+        presenter?.getAllMovies(txt: searchBar.text)
     }
     
     private func setup() {
         tableView.register(UINib(nibName: "HomeMovieTableViewCell", bundle: nil), forCellReuseIdentifier: "HomeMovieTableViewCell")
+        self.title = "Home"
     }
 }
 
@@ -38,6 +39,8 @@ class HomeViewController: UIViewController {
 extension HomeViewController: HomePresenterToViewProtocol {
     func fetchedResults(movies: [HomeMovieModel]) {
         //self.update view
+        self.homeMovies = movies
+        self.tableView.reloadData()
     }
     
     func showError(error: Error) {
@@ -47,11 +50,25 @@ extension HomeViewController: HomePresenterToViewProtocol {
 //MARK: - HomePresenterToViewProtocol
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "HomeMovieTableViewCell") as? HomeMovieTableViewCell else {return UITableViewCell()}
+        let data = homeMovies[indexPath.row]
+        cell.setupData(movie: data)
+        return cell
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return homeMovies.count
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        if indexPath.row == homeMovies.count - 4 {
+            //fetch next result
+            presenter?.getNextMovies(txt: searchBar.text)
+        }
     }
     
 }
@@ -59,6 +76,10 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
 //MARK: - UISearchBarDelegate
 extension HomeViewController: UISearchBarDelegate {
     func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
-        self.presenter?.searchForMovieName(txt: searchBar.text ?? "")
+        presenter?.getAllMovies(txt: searchBar.text)
+    }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
     }
 }

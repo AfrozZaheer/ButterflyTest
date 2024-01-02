@@ -26,6 +26,8 @@
 		4301C6032710536B3C5B58F1 /* Pods_ButterflyTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D355E5B6440E4197E04EF20 /* Pods_ButterflyTestTests.framework */; };
 		72967421BAA9EBF42BE32DA1 /* Pods_ButterflyTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0DA4DEE2EFEC096057B34A3 /* Pods_ButterflyTest.framework */; };
 		8A767B8D4B6F4332A35A4ECE /* Pods_ButterflyTest_ButterflyTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB84118F88ED9BCE1020CE58 /* Pods_ButterflyTest_ButterflyTestUITests.framework */; };
+		B823C3892B446F6600ED3C64 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B823C3882B446F6600ED3C64 /* UIViewExtension.swift */; };
+		B823C38B2B44728000ED3C64 /* Pagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = B823C38A2B44728000ED3C64 /* Pagination.swift */; };
 		B84EDF7A2B41AE85003E8234 /* MyNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84EDF762B41AE85003E8234 /* MyNetworkManager.swift */; };
 		B84EDF7B2B41AE85003E8234 /* EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84EDF772B41AE85003E8234 /* EndPoints.swift */; };
 		B84EDF892B41CEBE003E8234 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84EDF882B41CEBE003E8234 /* Movie.swift */; };
@@ -86,6 +88,8 @@
 		8186E7CD412D353B94A6A76E /* Pods-ButterflyTest-ButterflyTestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ButterflyTest-ButterflyTestUITests.release.xcconfig"; path = "Target Support Files/Pods-ButterflyTest-ButterflyTestUITests/Pods-ButterflyTest-ButterflyTestUITests.release.xcconfig"; sourceTree = "<group>"; };
 		9D355E5B6440E4197E04EF20 /* Pods_ButterflyTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ButterflyTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0DA4DEE2EFEC096057B34A3 /* Pods_ButterflyTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ButterflyTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B823C3882B446F6600ED3C64 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		B823C38A2B44728000ED3C64 /* Pagination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pagination.swift; sourceTree = "<group>"; };
 		B84EDF762B41AE85003E8234 /* MyNetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyNetworkManager.swift; sourceTree = "<group>"; };
 		B84EDF772B41AE85003E8234 /* EndPoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndPoints.swift; sourceTree = "<group>"; };
 		B84EDF882B41CEBE003E8234 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
@@ -211,6 +215,7 @@
 			children = (
 				03D132F12B3EAB0500290052 /* UIStoryboardExtension.swift */,
 				03E395D32B44021A00F4DAF1 /* UIImageViewExtension.swift */,
+				B823C3882B446F6600ED3C64 /* UIViewExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -281,11 +286,68 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		B823C3812B44629C00ED3C64 /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				03E395CA2B43AA4800F4DAF1 /* HomeContract.swift */,
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		B823C3822B4462AF00ED3C64 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B8549C4C2B42D5E500CDFA67 /* HomeViewController.swift */,
+				B8549C4D2B42D5E500CDFA67 /* HomeViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B823C3832B4462D200ED3C64 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				B8549C542B430D6900CDFA67 /* HomeRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		B823C3842B4462D700ED3C64 /* Intreactor */ = {
+			isa = PBXGroup;
+			children = (
+				B8549C522B430D6000CDFA67 /* HomeItreator.swift */,
+			);
+			path = Intreactor;
+			sourceTree = "<group>";
+		};
+		B823C3852B4462F700ED3C64 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				B8549C502B430D4E00CDFA67 /* HomePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		B823C3862B44630900ED3C64 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				03E395CC2B43E60F00F4DAF1 /* HomeModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B823C3872B44632F00ED3C64 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		B84EDF872B41CEAD003E8234 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				B84EDF882B41CEBE003E8234 /* Movie.swift */,
 				03E395D62B4416AC00F4DAF1 /* BaseModel.swift */,
+				B823C38A2B44728000ED3C64 /* Pagination.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -305,13 +367,13 @@
 		B8549C4A2B42D5B500CDFA67 /* HomeViewController */ = {
 			isa = PBXGroup;
 			children = (
-				B8549C4C2B42D5E500CDFA67 /* HomeViewController.swift */,
-				B8549C4D2B42D5E500CDFA67 /* HomeViewController.xib */,
-				B8549C502B430D4E00CDFA67 /* HomePresenter.swift */,
-				B8549C522B430D6000CDFA67 /* HomeItreator.swift */,
-				B8549C542B430D6900CDFA67 /* HomeRouter.swift */,
-				03E395CA2B43AA4800F4DAF1 /* HomeContract.swift */,
-				03E395CC2B43E60F00F4DAF1 /* HomeModel.swift */,
+				B823C3872B44632F00ED3C64 /* Cells */,
+				B823C3862B44630900ED3C64 /* Model */,
+				B823C3852B4462F700ED3C64 /* Presenter */,
+				B823C3842B4462D700ED3C64 /* Intreactor */,
+				B823C3832B4462D200ED3C64 /* Router */,
+				B823C3822B4462AF00ED3C64 /* View */,
+				B823C3812B44629C00ED3C64 /* Contract */,
 				03E395CF2B43F4D800F4DAF1 /* HomeMovieTableViewCell.swift */,
 				03E395D02B43F4D800F4DAF1 /* HomeMovieTableViewCell.xib */,
 			);
@@ -564,11 +626,13 @@
 				B84EDF8B2B423C12003E8234 /* MovieApiManager.swift in Sources */,
 				B84EDF7A2B41AE85003E8234 /* MyNetworkManager.swift in Sources */,
 				B8549C4E2B42D5E500CDFA67 /* HomeViewController.swift in Sources */,
+				B823C3892B446F6600ED3C64 /* UIViewExtension.swift in Sources */,
 				03E395D42B44021A00F4DAF1 /* UIImageViewExtension.swift in Sources */,
 				B84EDF952B42ABAE003E8234 /* API.swift in Sources */,
 				B8549C552B430D6900CDFA67 /* HomeRouter.swift in Sources */,
 				03E395CD2B43E60F00F4DAF1 /* HomeModel.swift in Sources */,
 				B8549C532B430D6000CDFA67 /* HomeItreator.swift in Sources */,
+				B823C38B2B44728000ED3C64 /* Pagination.swift in Sources */,
 				B84EDF962B42ABAE003E8234 /* NSError+Addition.swift in Sources */,
 				B84EDF922B42ABAE003E8234 /* APIRoutable.swift in Sources */,
 				03D132B62B3E61B400290052 /* AppDelegate.swift in Sources */,

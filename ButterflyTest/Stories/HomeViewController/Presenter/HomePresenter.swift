@@ -19,18 +19,30 @@ class HomePresenter: HomeViewToPresenterProtocol {
     var itreator: HomePresenterToItreatorProtocol
     var router: HomePresenterToRouterProtocol
     
-    func searchForMovieName(txt: String) {
-        itreator.fetchMovies(txt: txt)
+    private var pagingData = Pagination()
+    private var movies = [Movie]()
+
+    // MARK: - HomeViewToPresenterProtocol
+    func getAllMovies(txt: String?) {
+        pagingData.currentPage = 1
+        movies.removeAll()
+        
+        itreator.fetchMovies(txt: txt, page: pagingData.currentPage)
     }
     
-    func getAllMovies() {
-        itreator.fetchMovies(txt: nil)
+    func getNextMovies(txt: String?) {
+        if pagingData.shouldFetchNext() {
+            itreator.fetchMovies(txt: txt, page: pagingData.currentPage + 1)
+        }
     }
     
-    deinit {
-        print("asd")
+    func didClickedOn(movie: HomeMovieModel) {
+        if let mov = self.movies.first(where: {$0.id == movie.id}) {
+            router.moveToDetailViewController(nav: <#T##UINavigationController#>, movie: mov)
+        }
     }
     
+    //MARK: - Private methods
     private func convertDataForView(movies: [Movie]) -> [HomeMovieModel] {
         var model = [HomeMovieModel]()
         movies.forEach { movie in
@@ -42,9 +54,12 @@ class HomePresenter: HomeViewToPresenterProtocol {
 }
 
 extension HomePresenter: HomeItreatorToPresenterProtocol {
-    func didFetched(movies: [Movie]) {
-        view.fetchedResults(movies: convertDataForView(movies: movies))
+    func didFetched(movies: [Movie], paginationData: Pagination) {
+        self.movies.append(contentsOf: movies)
+        self.pagingData = paginationData
+        view.fetchedResults(movies: convertDataForView(movies: self.movies))
     }
+
     
     func errorOccurecd(error: Error) {
         view.showError(error: error)
