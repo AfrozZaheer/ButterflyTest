@@ -22,7 +22,7 @@ enum MyEndPoint: URLDirectable {
         switch (self) {
                         
         case .nowPlayingMovies:
-            endpoint = "movie/now_playing"
+            endpoint = "trending/movie/day?language=en-US"
             
         case .movieDetail(let id):
             endpoint = "movie\(id)"

@@ -17,6 +17,12 @@
 		03D132ED2B3E653700290052 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D132EC2B3E653700290052 /* AppRouter.swift */; };
 		03D132F02B3EA98000290052 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D132EF2B3EA98000290052 /* Constants.swift */; };
 		03D132F22B3EAB0500290052 /* UIStoryboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D132F12B3EAB0500290052 /* UIStoryboardExtension.swift */; };
+		03E395CB2B43AA4800F4DAF1 /* HomeContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E395CA2B43AA4800F4DAF1 /* HomeContract.swift */; };
+		03E395CD2B43E60F00F4DAF1 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E395CC2B43E60F00F4DAF1 /* HomeModel.swift */; };
+		03E395D12B43F4D800F4DAF1 /* HomeMovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E395CF2B43F4D800F4DAF1 /* HomeMovieTableViewCell.swift */; };
+		03E395D22B43F4D800F4DAF1 /* HomeMovieTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03E395D02B43F4D800F4DAF1 /* HomeMovieTableViewCell.xib */; };
+		03E395D42B44021A00F4DAF1 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E395D32B44021A00F4DAF1 /* UIImageViewExtension.swift */; };
+		03E395D72B4416AC00F4DAF1 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E395D62B4416AC00F4DAF1 /* BaseModel.swift */; };
 		4301C6032710536B3C5B58F1 /* Pods_ButterflyTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D355E5B6440E4197E04EF20 /* Pods_ButterflyTestTests.framework */; };
 		72967421BAA9EBF42BE32DA1 /* Pods_ButterflyTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0DA4DEE2EFEC096057B34A3 /* Pods_ButterflyTest.framework */; };
 		8A767B8D4B6F4332A35A4ECE /* Pods_ButterflyTest_ButterflyTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB84118F88ED9BCE1020CE58 /* Pods_ButterflyTest_ButterflyTestUITests.framework */; };
@@ -68,6 +74,12 @@
 		03D132EC2B3E653700290052 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		03D132EF2B3EA98000290052 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		03D132F12B3EAB0500290052 /* UIStoryboardExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStoryboardExtension.swift; sourceTree = "<group>"; };
+		03E395CA2B43AA4800F4DAF1 /* HomeContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeContract.swift; sourceTree = "<group>"; };
+		03E395CC2B43E60F00F4DAF1 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		03E395CF2B43F4D800F4DAF1 /* HomeMovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMovieTableViewCell.swift; sourceTree = "<group>"; };
+		03E395D02B43F4D800F4DAF1 /* HomeMovieTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeMovieTableViewCell.xib; sourceTree = "<group>"; };
+		03E395D32B44021A00F4DAF1 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
+		03E395D62B4416AC00F4DAF1 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
 		36C6221F4DEC7221FEB7E0ED /* Pods-ButterflyTest-ButterflyTestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ButterflyTest-ButterflyTestUITests.debug.xcconfig"; path = "Target Support Files/Pods-ButterflyTest-ButterflyTestUITests/Pods-ButterflyTest-ButterflyTestUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		60D60DCBD837257DEB1C4FE7 /* Pods-ButterflyTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ButterflyTestTests.release.xcconfig"; path = "Target Support Files/Pods-ButterflyTestTests/Pods-ButterflyTestTests.release.xcconfig"; sourceTree = "<group>"; };
 		70A81B00C9B11FFFEF18A517 /* Pods-ButterflyTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ButterflyTestTests.debug.xcconfig"; path = "Target Support Files/Pods-ButterflyTestTests/Pods-ButterflyTestTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -146,6 +158,7 @@
 		03D132B42B3E61B400290052 /* ButterflyTest */ = {
 			isa = PBXGroup;
 			children = (
+				03E395D82B44198000F4DAF1 /* ApiManager */,
 				B84EDF872B41CEAD003E8234 /* Models */,
 				03D132EE2B3EA97000290052 /* Constants */,
 				03D132E92B3E621500290052 /* Application */,
@@ -177,10 +190,8 @@
 		03D132E52B3E620D00290052 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				03E395D52B440FFE00F4DAF1 /* NetworkManagers */,
 				B84EDF8C2B42ABAE003E8234 /* Source */,
-				B84EDF772B41AE85003E8234 /* EndPoints.swift */,
-				B84EDF762B41AE85003E8234 /* MyNetworkManager.swift */,
-				B84EDF8A2B423C12003E8234 /* MovieApiManager.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -199,6 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				03D132F12B3EAB0500290052 /* UIStoryboardExtension.swift */,
+				03E395D32B44021A00F4DAF1 /* UIImageViewExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -229,6 +241,23 @@
 			path = Constants;
 			sourceTree = "<group>";
 		};
+		03E395D52B440FFE00F4DAF1 /* NetworkManagers */ = {
+			isa = PBXGroup;
+			children = (
+				B84EDF772B41AE85003E8234 /* EndPoints.swift */,
+				B84EDF762B41AE85003E8234 /* MyNetworkManager.swift */,
+			);
+			path = NetworkManagers;
+			sourceTree = "<group>";
+		};
+		03E395D82B44198000F4DAF1 /* ApiManager */ = {
+			isa = PBXGroup;
+			children = (
+				B84EDF8A2B423C12003E8234 /* MovieApiManager.swift */,
+			);
+			path = ApiManager;
+			sourceTree = "<group>";
+		};
 		5B04942B63EA8C8C0A56CBF6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -256,6 +285,7 @@
 			isa = PBXGroup;
 			children = (
 				B84EDF882B41CEBE003E8234 /* Movie.swift */,
+				03E395D62B4416AC00F4DAF1 /* BaseModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -280,6 +310,10 @@
 				B8549C502B430D4E00CDFA67 /* HomePresenter.swift */,
 				B8549C522B430D6000CDFA67 /* HomeItreator.swift */,
 				B8549C542B430D6900CDFA67 /* HomeRouter.swift */,
+				03E395CA2B43AA4800F4DAF1 /* HomeContract.swift */,
+				03E395CC2B43E60F00F4DAF1 /* HomeModel.swift */,
+				03E395CF2B43F4D800F4DAF1 /* HomeMovieTableViewCell.swift */,
+				03E395D02B43F4D800F4DAF1 /* HomeMovieTableViewCell.xib */,
 			);
 			path = HomeViewController;
 			sourceTree = "<group>";
@@ -396,6 +430,7 @@
 				03D132C22B3E61B500290052 /* LaunchScreen.storyboard in Resources */,
 				03D132BF2B3E61B500290052 /* Assets.xcassets in Resources */,
 				B8549C4F2B42D5E500CDFA67 /* HomeViewController.xib in Resources */,
+				03E395D22B43F4D800F4DAF1 /* HomeMovieTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -529,17 +564,22 @@
 				B84EDF8B2B423C12003E8234 /* MovieApiManager.swift in Sources */,
 				B84EDF7A2B41AE85003E8234 /* MyNetworkManager.swift in Sources */,
 				B8549C4E2B42D5E500CDFA67 /* HomeViewController.swift in Sources */,
+				03E395D42B44021A00F4DAF1 /* UIImageViewExtension.swift in Sources */,
 				B84EDF952B42ABAE003E8234 /* API.swift in Sources */,
 				B8549C552B430D6900CDFA67 /* HomeRouter.swift in Sources */,
+				03E395CD2B43E60F00F4DAF1 /* HomeModel.swift in Sources */,
 				B8549C532B430D6000CDFA67 /* HomeItreator.swift in Sources */,
 				B84EDF962B42ABAE003E8234 /* NSError+Addition.swift in Sources */,
 				B84EDF922B42ABAE003E8234 /* APIRoutable.swift in Sources */,
 				03D132B62B3E61B400290052 /* AppDelegate.swift in Sources */,
+				03E395CB2B43AA4800F4DAF1 /* HomeContract.swift in Sources */,
 				03D132F22B3EAB0500290052 /* UIStoryboardExtension.swift in Sources */,
 				B84EDF7B2B41AE85003E8234 /* EndPoints.swift in Sources */,
 				B84EDF942B42ABAE003E8234 /* APISessionManager.swift in Sources */,
 				03D132B82B3E61B400290052 /* SceneDelegate.swift in Sources */,
+				03E395D12B43F4D800F4DAF1 /* HomeMovieTableViewCell.swift in Sources */,
 				B84EDF892B41CEBE003E8234 /* Movie.swift in Sources */,
+				03E395D72B4416AC00F4DAF1 /* BaseModel.swift in Sources */,
 				B8549C512B430D4E00CDFA67 /* HomePresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -722,7 +762,7 @@
 				INFOPLIST_FILE = ButterflyTest/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -757,7 +797,7 @@
 				INFOPLIST_FILE = ButterflyTest/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;

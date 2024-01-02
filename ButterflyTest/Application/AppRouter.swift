@@ -13,10 +13,9 @@ class AppRouter {
     
     init(windowScene: UIWindowScene) {
         let window = UIWindow(windowScene: windowScene)
-
-        let mainVC = UIStoryboard.main.instantiateViewController(identifier: Constants.ViewControllerIdentifiers.mainVC.rawValue)
+        let controller = HomeRouter.createModule()
         
-        let nav = UINavigationController(rootViewController: mainVC)
+        let nav = UINavigationController(rootViewController: controller)
         window.rootViewController = nav
         self.window = window
     }
