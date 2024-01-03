@@ -11,6 +11,9 @@ import Foundation
 protocol MovieApiManagerProtocol {
     func getMovies(params:[String: Any]?, completion: @escaping (_ movies: BaseModel<Movie>?) -> Void, failure: @escaping (_ error: Error) -> Void)
     func searchMovie(params:[String: Any]?, completion: @escaping (_ movies: BaseModel<Movie>?) -> Void, failure: @escaping (_ error: Error) -> Void)
+    
+    func getMovieDetails(id: Int, completion: @escaping (_ movies: Movie?) -> Void, failure: @escaping (_ error: Error) -> Void)
+    
 }
 
 class MovieApiManager: MovieApiManagerProtocol {
@@ -21,11 +24,9 @@ class MovieApiManager: MovieApiManagerProtocol {
             switch result {
             case .success(let value):
                 completion(value)
-                break
 
             case .failure(let error):
                 failure(error)
-                break
 
             }
         }
@@ -40,13 +41,28 @@ class MovieApiManager: MovieApiManagerProtocol {
             switch result {
             case .success(let value):
                 completion(value)
-                break
 
             case .failure(let error):
                 failure(error)
-                break
 
             }
         }
     }
+    
+    func getMovieDetails(id: Int, completion: @escaping (Movie?) -> Void, failure: @escaping (Error) -> Void) {
+        let api = API(method: .get, endPoint: MyEndPoint.movieDetail(id: id), isAuthorized: true)
+        
+        myNetworkManager.requestObject(api, mapperType: Movie.self) { result in
+            switch result {
+            case .success(let value):
+                completion(value)
+                
+            case .failure(let error):
+                failure(error)
+                
+            }
+        }
+        
+    }
+    
 }

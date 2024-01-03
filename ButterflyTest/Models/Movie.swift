@@ -24,6 +24,12 @@ class Movie: NSObject, Mappable {
     var voteAverage: Double?
     var voteCount: Int?
     
+    var budget: Int?
+    var homepage: String?
+    var imdbID: String?
+    var revenue, runtime: Int?
+    var status, tagline: String?
+    
     enum CodingKeys: String, CodingKey {
         case adult
         case backdropPath = "backdrop_path"
@@ -39,6 +45,12 @@ class Movie: NSObject, Mappable {
         case video
         case voteAverage = "vote_average"
         case voteCount = "vote_count"
+        
+        case budget, homepage
+        case imdbID = "imdb_id"
+        case revenue, runtime
+        case status, tagline
+        
     }
     
     required init?(map: Map) { }
@@ -59,7 +71,15 @@ class Movie: NSObject, Mappable {
         video <- map[CodingKeys.video.rawValue]
         voteAverage <- map[CodingKeys.voteAverage.rawValue]
         voteCount <- map[CodingKeys.voteCount.rawValue]
-
+        
+        budget <- map[CodingKeys.budget.rawValue]
+        homepage <- map[CodingKeys.homepage.rawValue]
+        imdbID <- map[CodingKeys.imdbID.rawValue]
+        revenue <- map[CodingKeys.revenue.rawValue]
+        runtime <- map[CodingKeys.runtime.rawValue]
+        status <- map[CodingKeys.status.rawValue]
+        tagline <- map[CodingKeys.voteCount.rawValue]
+        
     }
 }
 

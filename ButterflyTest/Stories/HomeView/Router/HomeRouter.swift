@@ -10,10 +10,13 @@ import UIKit
 
 class HomeRouter {
     
+    weak var view: UIViewController?
+    
     static func createModule() -> HomeViewController {
         let view = HomeViewController.initializeViewControllerInstance()
         let itreator = HomeItreator(apiManager: MovieApiManager())
         let router = HomeRouter()
+        router.view = view
         
         let presenter = HomePresenter(view: view, itreator: itreator, router: router)
         
@@ -25,7 +28,9 @@ class HomeRouter {
 }
 
 extension HomeRouter: HomePresenterToRouterProtocol {
-    func moveToDetailViewController(nav: UINavigationController, movie: Movie) {
-        //push to new module
+    func moveToDetailViewController(movie: Movie) {
+        //createDetail vc and push in nav
+        let controller = MovieDetailRouter.createModule(movie: movie)
+        self.view?.navigationController?.pushViewController(controller, animated: true)
     }
 }

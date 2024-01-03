@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 class HomePresenter: HomeViewToPresenterProtocol {
     
@@ -15,7 +16,7 @@ class HomePresenter: HomeViewToPresenterProtocol {
         self.router = router
     }
     
-    var view: HomePresenterToViewProtocol
+    weak var view: HomePresenterToViewProtocol?
     var itreator: HomePresenterToItreatorProtocol
     var router: HomePresenterToRouterProtocol
     
@@ -36,9 +37,9 @@ class HomePresenter: HomeViewToPresenterProtocol {
         }
     }
     
-    func didClickedOn(movie: HomeMovieModel) {
+    func moveToMovieDetail(movie: HomeMovieModel) {
         if let mov = self.movies.first(where: {$0.id == movie.id}) {
-            router.moveToDetailViewController(nav: <#T##UINavigationController#>, movie: mov)
+            router.moveToDetailViewController(movie: mov)
         }
     }
     
@@ -57,12 +58,12 @@ extension HomePresenter: HomeItreatorToPresenterProtocol {
     func didFetched(movies: [Movie], paginationData: Pagination) {
         self.movies.append(contentsOf: movies)
         self.pagingData = paginationData
-        view.fetchedResults(movies: convertDataForView(movies: self.movies))
+        view?.fetchedResults(movies: convertDataForView(movies: self.movies))
     }
 
     
     func errorOccurecd(error: Error) {
-        view.showError(error: error)
+        view?.showError(error: error)
     }
 }
 

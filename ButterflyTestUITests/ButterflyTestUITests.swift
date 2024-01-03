@@ -26,7 +26,12 @@ final class ButterflyTestUITests: XCTestCase {
         // UI tests must launch the application that they test.
         let app = XCUIApplication()
         app.launch()
-
+        
+        let tablesQuery = app.tables
+        let search = tablesQuery.searchFields["e.g. Avengers End game"]
+        search.tap()
+        search.typeText("The Mummy")
+        
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
 

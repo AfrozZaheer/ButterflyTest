@@ -20,8 +20,8 @@ public struct API {
 
     //MARK:- Properties
 
-    public static var shouldShowDevLogs = false
-    public static var errorDomain = "com.fahid.FANetworkLayer"
+    public static var shouldShowDevLogs = true
+    public static var errorDomain = "com.Afroz.FANetworkLayer"
 
     public var method: HTTPMethod
     public var endPoint: URLDirectable

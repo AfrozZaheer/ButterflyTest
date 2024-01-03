@@ -6,12 +6,11 @@
 //
 
 import Foundation
-import UIKit
 
 protocol HomeViewToPresenterProtocol: AnyObject {
     func getAllMovies(txt: String?)
     func getNextMovies(txt: String?)
-    func moveToMovieDetail(nav: UINavigationController, movie: HomeMovieModel)
+    func moveToMovieDetail(movie: HomeMovieModel)
 }
 
 protocol HomePresenterToViewProtocol: AnyObject {
@@ -20,7 +19,7 @@ protocol HomePresenterToViewProtocol: AnyObject {
 }
 
 protocol HomePresenterToRouterProtocol {
-    func moveToDetailViewController(nav: UINavigationController, movie: Movie)
+    func moveToDetailViewController(movie: Movie)
 }
 
 protocol HomeItreatorToPresenterProtocol: AnyObject {

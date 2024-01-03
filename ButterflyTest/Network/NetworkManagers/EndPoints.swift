@@ -25,7 +25,7 @@ enum MyEndPoint: URLDirectable {
             endpoint = "trending/movie/day?language=en-US"
             
         case .movieDetail(let id):
-            endpoint = "movie\(id)"
+            endpoint = "movie/\(id)"
             
         case .searchMovie:
             endpoint = "search/movie"

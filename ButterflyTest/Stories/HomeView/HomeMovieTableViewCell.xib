@@ -11,15 +11,15 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="HomeMovieTableViewCell" rowHeight="111" id="KGk-i7-Jjw" customClass="HomeMovieTableViewCell" customModule="ButterflyTest" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="429" height="111"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="HomeMovieTableViewCell" rowHeight="187" id="KGk-i7-Jjw" customClass="HomeMovieTableViewCell" customModule="ButterflyTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="429" height="187"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="429" height="111"/>
+                <rect key="frame" x="0.0" y="0.0" width="429" height="187"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aDb-Jg-ibv">
-                        <rect key="frame" x="8" y="8" width="413" height="95"/>
+                        <rect key="frame" x="8" y="8" width="413" height="171"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KfG-da-sNe">
                                 <rect key="frame" x="8" y="8" width="70" height="70"/>
@@ -34,8 +34,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vpy-IU-yUy">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Release date: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qxX-lm-wlR">
                                 <rect key="frame" x="86" y="40" width="319" height="18"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vpy-IU-yUy">
+                                <rect key="frame" x="86" y="66" width="319" height="18"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -43,16 +49,19 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="qxX-lm-wlR" secondAttribute="trailing" constant="8" id="3SZ-jL-oE5"/>
+                            <constraint firstItem="Vpy-IU-yUy" firstAttribute="top" secondItem="qxX-lm-wlR" secondAttribute="bottom" constant="8" symbolic="YES" id="8xL-gC-ZMX"/>
                             <constraint firstAttribute="trailing" secondItem="CmN-Rq-ccM" secondAttribute="trailing" constant="8" id="R6Z-Cq-u67"/>
+                            <constraint firstItem="qxX-lm-wlR" firstAttribute="top" secondItem="CmN-Rq-ccM" secondAttribute="bottom" constant="8" symbolic="YES" id="SYA-VC-Zhe"/>
                             <constraint firstItem="Vpy-IU-yUy" firstAttribute="leading" secondItem="KfG-da-sNe" secondAttribute="trailing" constant="8" id="Z1n-Ja-VQ0"/>
                             <constraint firstItem="CmN-Rq-ccM" firstAttribute="leading" secondItem="KfG-da-sNe" secondAttribute="trailing" constant="8" id="e7O-fN-9wZ"/>
                             <constraint firstAttribute="trailing" secondItem="Vpy-IU-yUy" secondAttribute="trailing" constant="8" id="i5e-wd-FMR"/>
                             <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Vpy-IU-yUy" secondAttribute="bottom" constant="8" id="imE-dw-LHy"/>
                             <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="KfG-da-sNe" secondAttribute="bottom" constant="8" id="ivQ-ke-n29"/>
                             <constraint firstItem="CmN-Rq-ccM" firstAttribute="top" secondItem="KfG-da-sNe" secondAttribute="top" id="jAJ-eZ-KZO"/>
+                            <constraint firstItem="qxX-lm-wlR" firstAttribute="leading" secondItem="KfG-da-sNe" secondAttribute="trailing" constant="8" symbolic="YES" id="ktn-h2-yjn"/>
                             <constraint firstItem="KfG-da-sNe" firstAttribute="top" secondItem="aDb-Jg-ibv" secondAttribute="top" constant="8" id="lTy-4i-PiT"/>
                             <constraint firstItem="KfG-da-sNe" firstAttribute="leading" secondItem="aDb-Jg-ibv" secondAttribute="leading" constant="8" id="rCA-L7-IfQ"/>
-                            <constraint firstItem="Vpy-IU-yUy" firstAttribute="top" secondItem="CmN-Rq-ccM" secondAttribute="bottom" constant="8" id="sP2-PL-agL"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
@@ -81,9 +90,10 @@
             <connections>
                 <outlet property="imgMovie" destination="KfG-da-sNe" id="BzL-wC-QYk"/>
                 <outlet property="lblDescp" destination="Vpy-IU-yUy" id="7HT-pk-7BT"/>
+                <outlet property="lblReleaseDate" destination="qxX-lm-wlR" id="SPR-Ec-IQB"/>
                 <outlet property="lblTitle" destination="CmN-Rq-ccM" id="0Fd-Mo-x7M"/>
             </connections>
-            <point key="canvasLocation" x="236" y="27"/>
+            <point key="canvasLocation" x="235.87786259541983" y="53.169014084507047"/>
         </tableViewCell>
     </objects>
     <resources>
