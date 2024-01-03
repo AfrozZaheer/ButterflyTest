@@ -9,6 +9,7 @@ target 'ButterflyTest' do
   pod 'Alamofire', '~> 4.7'
   pod 'ObjectMapper', '~> 3.4.2'
   pod 'Kingfisher'
+  pod 'Cache'
   
   target 'ButterflyTestTests' do
     inherit! :search_paths

@@ -34,7 +34,6 @@
 		4301C6032710536B3C5B58F1 /* Pods_ButterflyTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D355E5B6440E4197E04EF20 /* Pods_ButterflyTestTests.framework */; };
 		72967421BAA9EBF42BE32DA1 /* Pods_ButterflyTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0DA4DEE2EFEC096057B34A3 /* Pods_ButterflyTest.framework */; };
 		8A767B8D4B6F4332A35A4ECE /* Pods_ButterflyTest_ButterflyTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB84118F88ED9BCE1020CE58 /* Pods_ButterflyTest_ButterflyTestUITests.framework */; };
-		B80B56C02B45C0AE00728BE7 /* OfflineNetworkmanager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80B56BF2B45C0AE00728BE7 /* OfflineNetworkmanager.swift */; };
 		B823C3892B446F6600ED3C64 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B823C3882B446F6600ED3C64 /* UIViewExtension.swift */; };
 		B823C38B2B44728000ED3C64 /* Pagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = B823C38A2B44728000ED3C64 /* Pagination.swift */; };
 		B84EDF7A2B41AE85003E8234 /* MyNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84EDF762B41AE85003E8234 /* MyNetworkManager.swift */; };
@@ -105,7 +104,6 @@
 		8186E7CD412D353B94A6A76E /* Pods-ButterflyTest-ButterflyTestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ButterflyTest-ButterflyTestUITests.release.xcconfig"; path = "Target Support Files/Pods-ButterflyTest-ButterflyTestUITests/Pods-ButterflyTest-ButterflyTestUITests.release.xcconfig"; sourceTree = "<group>"; };
 		9D355E5B6440E4197E04EF20 /* Pods_ButterflyTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ButterflyTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0DA4DEE2EFEC096057B34A3 /* Pods_ButterflyTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ButterflyTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B80B56BF2B45C0AE00728BE7 /* OfflineNetworkmanager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineNetworkmanager.swift; sourceTree = "<group>"; };
 		B823C3882B446F6600ED3C64 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		B823C38A2B44728000ED3C64 /* Pagination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pagination.swift; sourceTree = "<group>"; };
 		B84EDF762B41AE85003E8234 /* MyNetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyNetworkManager.swift; sourceTree = "<group>"; };
@@ -274,7 +272,6 @@
 		03D132E52B3E620D00290052 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				B80B56BE2B45BF7D00728BE7 /* OfflineManager */,
 				03E395D52B440FFE00F4DAF1 /* NetworkManagers */,
 				B84EDF8C2B42ABAE003E8234 /* Source */,
 			);
@@ -367,14 +364,6 @@
 				60D60DCBD837257DEB1C4FE7 /* Pods-ButterflyTestTests.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		B80B56BE2B45BF7D00728BE7 /* OfflineManager */ = {
-			isa = PBXGroup;
-			children = (
-				B80B56BF2B45C0AE00728BE7 /* OfflineNetworkmanager.swift */,
-			);
-			path = OfflineManager;
 			sourceTree = "<group>";
 		};
 		B823C3812B44629C00ED3C64 /* Contract */ = {
@@ -732,7 +721,6 @@
 				B84EDF962B42ABAE003E8234 /* NSError+Addition.swift in Sources */,
 				B84EDF922B42ABAE003E8234 /* APIRoutable.swift in Sources */,
 				03D132B62B3E61B400290052 /* AppDelegate.swift in Sources */,
-				B80B56C02B45C0AE00728BE7 /* OfflineNetworkmanager.swift in Sources */,
 				03E395CB2B43AA4800F4DAF1 /* HomeContract.swift in Sources */,
 				039552BA2B44FB690024B0C7 /* MovieDetailRouter.swift in Sources */,
 				03D132F22B3EAB0500290052 /* UIStoryboardExtension.swift in Sources */,

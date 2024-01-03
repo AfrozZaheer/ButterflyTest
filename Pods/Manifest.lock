@@ -1,24 +1,28 @@
 PODS:
   - Alamofire (4.9.1)
+  - Cache (6.0.0)
   - Kingfisher (7.10.1)
   - ObjectMapper (3.4.2)
 
 DEPENDENCIES:
   - Alamofire (~> 4.7)
+  - Cache
   - Kingfisher
   - ObjectMapper (~> 3.4.2)
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - Cache
     - Kingfisher
     - ObjectMapper
 
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  Cache: 4ca7e00363fca5455f26534e5607634c820ffc2d
   Kingfisher: bc5abe80a8e0144537ef1dd5a0b2621b04f7f439
   ObjectMapper: 0d4402610f4e468903ae64629eec4784531e5c51
 
-PODFILE CHECKSUM: e1e1e41b94fc1492b03a701e66224f7653f1f46e
+PODFILE CHECKSUM: 73c0f6bde7bfd0d8f47f625e1daa566687ee1ffc
 
-COCOAPODS: 1.14.3
+COCOAPODS: 1.11.3
