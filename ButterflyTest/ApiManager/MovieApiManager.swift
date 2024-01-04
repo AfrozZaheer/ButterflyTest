@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+import Alamofire
 
 protocol MovieApiManagerProtocol {
     func getMovies(params:[String: Any]?, completion: @escaping (_ movies: BaseModel<Movie>?) -> Void, failure: @escaping (_ error: Error) -> Void)
@@ -40,6 +40,10 @@ class MovieApiManager: MovieApiManagerProtocol {
         myNetworkManager.requestObject(api, mapperType: BaseModel<Movie>.self) { result in
             switch result {
             case .success(let value):
+                //validation completed now cache last fetched Item
+                if let list = value.results {
+                    OfflineNetwork.shared.saveListItemToCache(list: list, key: api.endPoint.urlString())
+                }
                 completion(value)
 
             case .failure(let error):
@@ -55,6 +59,9 @@ class MovieApiManager: MovieApiManagerProtocol {
         myNetworkManager.requestObject(api, mapperType: Movie.self) { result in
             switch result {
             case .success(let value):
+                
+                OfflineNetwork.shared.saveItemToCache(item: value, key: api.endPoint.urlString())
+                
                 completion(value)
                 
             case .failure(let error):

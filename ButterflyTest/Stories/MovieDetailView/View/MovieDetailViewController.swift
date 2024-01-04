@@ -51,5 +51,6 @@ extension MovieDetailViewController: MovieDetailPresenterToViewProtocol {
     }
     
     func showError(error: Error) {
+        self.showErrorAlert(msg: error.localizedDescription)
     }
 }

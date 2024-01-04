@@ -54,7 +54,7 @@ class HomePresenter: HomeViewToPresenterProtocol {
     }
 }
 
-extension HomePresenter: HomeItreatorToPresenterProtocol {
+extension HomePresenter: HomeIntreactorToPresenterProtocol {
     func didFetched(movies: [Movie], paginationData: Pagination) {
         self.movies.append(contentsOf: movies)
         self.pagingData = paginationData

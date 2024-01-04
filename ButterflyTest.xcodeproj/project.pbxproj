@@ -15,6 +15,8 @@
 		039552C12B44FF6F0024B0C7 /* MovieDetailContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039552C02B44FF6F0024B0C7 /* MovieDetailContract.swift */; };
 		039552C52B45536D0024B0C7 /* MovieDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039552C42B45536D0024B0C7 /* MovieDetailModel.swift */; };
 		039552C72B455A100024B0C7 /* NetworkErrorsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039552C62B455A100024B0C7 /* NetworkErrorsExtension.swift */; };
+		039552C92B4642D70024B0C7 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039552C82B4642D70024B0C7 /* UIViewControllerExtension.swift */; };
+		039552CC2B4647DE0024B0C7 /* OfflineNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039552CB2B4647DE0024B0C7 /* OfflineNetwork.swift */; };
 		03D132B62B3E61B400290052 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D132B52B3E61B400290052 /* AppDelegate.swift */; };
 		03D132B82B3E61B400290052 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D132B72B3E61B400290052 /* SceneDelegate.swift */; };
 		03D132BF2B3E61B500290052 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03D132BE2B3E61B500290052 /* Assets.xcassets */; };
@@ -48,7 +50,7 @@
 		B8549C4E2B42D5E500CDFA67 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8549C4C2B42D5E500CDFA67 /* HomeViewController.swift */; };
 		B8549C4F2B42D5E500CDFA67 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8549C4D2B42D5E500CDFA67 /* HomeViewController.xib */; };
 		B8549C512B430D4E00CDFA67 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8549C502B430D4E00CDFA67 /* HomePresenter.swift */; };
-		B8549C532B430D6000CDFA67 /* HomeItreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8549C522B430D6000CDFA67 /* HomeItreator.swift */; };
+		B8549C532B430D6000CDFA67 /* HomeIntreactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8549C522B430D6000CDFA67 /* HomeIntreactor.swift */; };
 		B8549C552B430D6900CDFA67 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8549C542B430D6900CDFA67 /* HomeRouter.swift */; };
 /* End PBXBuildFile section */
 
@@ -78,6 +80,8 @@
 		039552C02B44FF6F0024B0C7 /* MovieDetailContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailContract.swift; sourceTree = "<group>"; };
 		039552C42B45536D0024B0C7 /* MovieDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailModel.swift; sourceTree = "<group>"; };
 		039552C62B455A100024B0C7 /* NetworkErrorsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrorsExtension.swift; sourceTree = "<group>"; };
+		039552C82B4642D70024B0C7 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		039552CB2B4647DE0024B0C7 /* OfflineNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineNetwork.swift; sourceTree = "<group>"; };
 		03D132B22B3E61B400290052 /* ButterflyTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ButterflyTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03D132B52B3E61B400290052 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03D132B72B3E61B400290052 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -118,7 +122,7 @@
 		B8549C4C2B42D5E500CDFA67 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B8549C4D2B42D5E500CDFA67 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		B8549C502B430D4E00CDFA67 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
-		B8549C522B430D6000CDFA67 /* HomeItreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeItreator.swift; sourceTree = "<group>"; };
+		B8549C522B430D6000CDFA67 /* HomeIntreactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeIntreactor.swift; sourceTree = "<group>"; };
 		B8549C542B430D6900CDFA67 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 		D6D550D7CEDABC7CEFF19EF6 /* Pods-ButterflyTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ButterflyTest.release.xcconfig"; path = "Target Support Files/Pods-ButterflyTest/Pods-ButterflyTest.release.xcconfig"; sourceTree = "<group>"; };
 		EB84118F88ED9BCE1020CE58 /* Pods_ButterflyTest_ButterflyTestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ButterflyTest_ButterflyTestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -215,6 +219,14 @@
 			path = Entitiy;
 			sourceTree = "<group>";
 		};
+		039552CA2B4647CE0024B0C7 /* OfflineNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				039552CB2B4647DE0024B0C7 /* OfflineNetwork.swift */,
+			);
+			path = OfflineNetwork;
+			sourceTree = "<group>";
+		};
 		03D132A92B3E61B400290052 = {
 			isa = PBXGroup;
 			children = (
@@ -272,6 +284,7 @@
 		03D132E52B3E620D00290052 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				039552CA2B4647CE0024B0C7 /* OfflineNetwork */,
 				03E395D52B440FFE00F4DAF1 /* NetworkManagers */,
 				B84EDF8C2B42ABAE003E8234 /* Source */,
 			);
@@ -294,6 +307,7 @@
 				03D132F12B3EAB0500290052 /* UIStoryboardExtension.swift */,
 				03E395D32B44021A00F4DAF1 /* UIImageViewExtension.swift */,
 				B823C3882B446F6600ED3C64 /* UIViewExtension.swift */,
+				039552C82B4642D70024B0C7 /* UIViewControllerExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -394,7 +408,7 @@
 		B823C3842B4462D700ED3C64 /* Intreactor */ = {
 			isa = PBXGroup;
 			children = (
-				B8549C522B430D6000CDFA67 /* HomeItreator.swift */,
+				B8549C522B430D6000CDFA67 /* HomeIntreactor.swift */,
 			);
 			path = Intreactor;
 			sourceTree = "<group>";
@@ -716,17 +730,19 @@
 				B8549C552B430D6900CDFA67 /* HomeRouter.swift in Sources */,
 				03E395CD2B43E60F00F4DAF1 /* HomeModel.swift in Sources */,
 				039552BC2B44FC410024B0C7 /* MovieDetailIntreactor.swift in Sources */,
-				B8549C532B430D6000CDFA67 /* HomeItreator.swift in Sources */,
+				B8549C532B430D6000CDFA67 /* HomeIntreactor.swift in Sources */,
 				B823C38B2B44728000ED3C64 /* Pagination.swift in Sources */,
 				B84EDF962B42ABAE003E8234 /* NSError+Addition.swift in Sources */,
 				B84EDF922B42ABAE003E8234 /* APIRoutable.swift in Sources */,
 				03D132B62B3E61B400290052 /* AppDelegate.swift in Sources */,
+				039552CC2B4647DE0024B0C7 /* OfflineNetwork.swift in Sources */,
 				03E395CB2B43AA4800F4DAF1 /* HomeContract.swift in Sources */,
 				039552BA2B44FB690024B0C7 /* MovieDetailRouter.swift in Sources */,
 				03D132F22B3EAB0500290052 /* UIStoryboardExtension.swift in Sources */,
 				B84EDF7B2B41AE85003E8234 /* EndPoints.swift in Sources */,
 				B84EDF942B42ABAE003E8234 /* APISessionManager.swift in Sources */,
 				039552C52B45536D0024B0C7 /* MovieDetailModel.swift in Sources */,
+				039552C92B4642D70024B0C7 /* UIViewControllerExtension.swift in Sources */,
 				03D132B82B3E61B400290052 /* SceneDelegate.swift in Sources */,
 				039552C72B455A100024B0C7 /* NetworkErrorsExtension.swift in Sources */,
 				03E395D12B43F4D800F4DAF1 /* HomeMovieTableViewCell.swift in Sources */,

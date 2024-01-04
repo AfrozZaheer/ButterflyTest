@@ -14,7 +14,7 @@ class HomeRouter {
     
     static func createModule() -> HomeViewController {
         let view = HomeViewController.initializeViewControllerInstance()
-        let itreator = HomeItreator(apiManager: MovieApiManager())
+        let itreator = HomeIntreactor(apiManager: MovieApiManager())
         let router = HomeRouter()
         router.view = view
         

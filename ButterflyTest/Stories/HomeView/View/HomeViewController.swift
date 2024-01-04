@@ -44,7 +44,7 @@ extension HomeViewController: HomePresenterToViewProtocol {
     }
     
     func showError(error: Error) {
-        //self.showError
+        self.showErrorAlert(msg: error.localizedDescription)
     }
 }
 //MARK: - HomePresenterToViewProtocol

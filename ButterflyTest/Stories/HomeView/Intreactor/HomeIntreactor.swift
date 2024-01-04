@@ -6,17 +6,34 @@
 //
 
 import Foundation
+import Alamofire
+import Cache
 
-class HomeItreator: HomePresenterToItreatorProtocol {
+class HomeIntreactor: HomePresenterToItreatorProtocol {
     
     let apiManager: MovieApiManagerProtocol
-    weak var presenter: HomeItreatorToPresenterProtocol?
+    weak var presenter: HomeIntreactorToPresenterProtocol?
     
     init(apiManager: MovieApiManagerProtocol) {
         self.apiManager = apiManager
     }
     
+    private func getDataFromCacheManager(url: String) {
+        OfflineNetwork.shared.getListItemFromCache(key: url) { (movies: [Movie]?) in
+            let pagination = Pagination(currentPage: 1) // specifically pass 1 so we can not call more pagination.
+            guard let movies else {return}
+            self.presenter?.didFetched(movies: movies, paginationData: pagination)
+        }
+    }
+    
     func fetchMovies(txt: String?, page: Int) {
+        
+        if let rm = NetworkReachabilityManager(), !rm.isReachable {
+            //fetch from cache
+            getDataFromCacheManager(url: MyEndPoint.nowPlayingMovies.urlString())
+            return
+        }
+        
         if let textToSearch = txt, !textToSearch.isEmpty {
             //call search api
             let param: [String : Any] = ["query":textToSearch,

@@ -22,7 +22,7 @@ protocol HomePresenterToRouterProtocol {
     func moveToDetailViewController(movie: Movie)
 }
 
-protocol HomeItreatorToPresenterProtocol: AnyObject {
+protocol HomeIntreactorToPresenterProtocol: AnyObject {
     func didFetched(movies: [Movie], paginationData: Pagination)
     func errorOccurecd(error: Error)
 }
