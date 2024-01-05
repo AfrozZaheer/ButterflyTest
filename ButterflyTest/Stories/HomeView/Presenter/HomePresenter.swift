@@ -10,7 +10,7 @@ import UIKit
 
 class HomePresenter: HomeViewToPresenterProtocol {
     
-    init(view: HomePresenterToViewProtocol, itreator: HomePresenterToItreatorProtocol, router: HomePresenterToRouterProtocol) {
+    required init(view: HomePresenterToViewProtocol, itreator: HomePresenterToItreatorProtocol, router: HomePresenterToRouterProtocol) {
         self.view = view
         self.itreator = itreator
         self.router = router

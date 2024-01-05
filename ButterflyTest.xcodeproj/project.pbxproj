@@ -17,11 +17,16 @@
 		039552C72B455A100024B0C7 /* NetworkErrorsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039552C62B455A100024B0C7 /* NetworkErrorsExtension.swift */; };
 		039552C92B4642D70024B0C7 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039552C82B4642D70024B0C7 /* UIViewControllerExtension.swift */; };
 		039552CC2B4647DE0024B0C7 /* OfflineNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039552CB2B4647DE0024B0C7 /* OfflineNetwork.swift */; };
+		03A7940C2B479DE500EC7E9B /* HomeViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A7940B2B479DE500EC7E9B /* HomeViewTests.swift */; };
+		03A7940F2B479ED000EC7E9B /* MockHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A7940E2B479ED000EC7E9B /* MockHomeViewController.swift */; };
+		03A794112B479EE100EC7E9B /* MockHomeIntreactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A794102B479EE100EC7E9B /* MockHomeIntreactor.swift */; };
+		03A794132B479EEC00EC7E9B /* MockHomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A794122B479EEC00EC7E9B /* MockHomePresenter.swift */; };
+		03A794152B479EF800EC7E9B /* MockHomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A794142B479EF800EC7E9B /* MockHomeRouter.swift */; };
+		03A794172B47A94600EC7E9B /* MockApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A794162B47A94600EC7E9B /* MockApiManager.swift */; };
 		03D132B62B3E61B400290052 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D132B52B3E61B400290052 /* AppDelegate.swift */; };
 		03D132B82B3E61B400290052 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D132B72B3E61B400290052 /* SceneDelegate.swift */; };
 		03D132BF2B3E61B500290052 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03D132BE2B3E61B500290052 /* Assets.xcassets */; };
 		03D132C22B3E61B500290052 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03D132C02B3E61B500290052 /* LaunchScreen.storyboard */; };
-		03D132CD2B3E61B500290052 /* ButterflyTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D132CC2B3E61B500290052 /* ButterflyTestTests.swift */; };
 		03D132D72B3E61B500290052 /* ButterflyTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D132D62B3E61B500290052 /* ButterflyTestUITests.swift */; };
 		03D132D92B3E61B500290052 /* ButterflyTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D132D82B3E61B500290052 /* ButterflyTestUITestsLaunchTests.swift */; };
 		03D132ED2B3E653700290052 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D132EC2B3E653700290052 /* AppRouter.swift */; };
@@ -82,6 +87,13 @@
 		039552C62B455A100024B0C7 /* NetworkErrorsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrorsExtension.swift; sourceTree = "<group>"; };
 		039552C82B4642D70024B0C7 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		039552CB2B4647DE0024B0C7 /* OfflineNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineNetwork.swift; sourceTree = "<group>"; };
+		03A7940A2B479DE400EC7E9B /* ButterflyTestTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ButterflyTestTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		03A7940B2B479DE500EC7E9B /* HomeViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewTests.swift; sourceTree = "<group>"; };
+		03A7940E2B479ED000EC7E9B /* MockHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockHomeViewController.swift; sourceTree = "<group>"; };
+		03A794102B479EE100EC7E9B /* MockHomeIntreactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockHomeIntreactor.swift; sourceTree = "<group>"; };
+		03A794122B479EEC00EC7E9B /* MockHomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockHomePresenter.swift; sourceTree = "<group>"; };
+		03A794142B479EF800EC7E9B /* MockHomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockHomeRouter.swift; sourceTree = "<group>"; };
+		03A794162B47A94600EC7E9B /* MockApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockApiManager.swift; sourceTree = "<group>"; };
 		03D132B22B3E61B400290052 /* ButterflyTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ButterflyTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03D132B52B3E61B400290052 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03D132B72B3E61B400290052 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -89,7 +101,6 @@
 		03D132C12B3E61B500290052 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		03D132C32B3E61B500290052 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03D132C82B3E61B500290052 /* ButterflyTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ButterflyTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		03D132CC2B3E61B500290052 /* ButterflyTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButterflyTestTests.swift; sourceTree = "<group>"; };
 		03D132D22B3E61B500290052 /* ButterflyTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ButterflyTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		03D132D62B3E61B500290052 /* ButterflyTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButterflyTestUITests.swift; sourceTree = "<group>"; };
 		03D132D82B3E61B500290052 /* ButterflyTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButterflyTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -227,6 +238,17 @@
 			path = OfflineNetwork;
 			sourceTree = "<group>";
 		};
+		03A7940D2B479EAF00EC7E9B /* MockHomeView */ = {
+			isa = PBXGroup;
+			children = (
+				03A7940E2B479ED000EC7E9B /* MockHomeViewController.swift */,
+				03A794102B479EE100EC7E9B /* MockHomeIntreactor.swift */,
+				03A794122B479EEC00EC7E9B /* MockHomePresenter.swift */,
+				03A794142B479EF800EC7E9B /* MockHomeRouter.swift */,
+			);
+			path = MockHomeView;
+			sourceTree = "<group>";
+		};
 		03D132A92B3E61B400290052 = {
 			isa = PBXGroup;
 			children = (
@@ -267,7 +289,9 @@
 		03D132CB2B3E61B500290052 /* ButterflyTestTests */ = {
 			isa = PBXGroup;
 			children = (
-				03D132CC2B3E61B500290052 /* ButterflyTestTests.swift */,
+				03A794162B47A94600EC7E9B /* MockApiManager.swift */,
+				03A7940D2B479EAF00EC7E9B /* MockHomeView */,
+				03F1D8502B47974D003C1D09 /* HomeViewTest */,
 			);
 			path = ButterflyTestTests;
 			sourceTree = "<group>";
@@ -355,6 +379,15 @@
 				B84EDF8A2B423C12003E8234 /* MovieApiManager.swift */,
 			);
 			path = ApiManager;
+			sourceTree = "<group>";
+		};
+		03F1D8502B47974D003C1D09 /* HomeViewTest */ = {
+			isa = PBXGroup;
+			children = (
+				03A7940B2B479DE500EC7E9B /* HomeViewTests.swift */,
+				03A7940A2B479DE400EC7E9B /* ButterflyTestTests-Bridging-Header.h */,
+			);
+			path = HomeViewTest;
 			sourceTree = "<group>";
 		};
 		5B04942B63EA8C8C0A56CBF6 /* Frameworks */ = {
@@ -550,6 +583,7 @@
 					};
 					03D132C72B3E61B500290052 = {
 						CreatedOnToolsVersion = 15.0.1;
+						LastSwiftMigration = 1500;
 						TestTargetID = 03D132B12B3E61B400290052;
 					};
 					03D132D12B3E61B500290052 = {
@@ -756,7 +790,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03D132CD2B3E61B500290052 /* ButterflyTestTests.swift in Sources */,
+				03A7940C2B479DE500EC7E9B /* HomeViewTests.swift in Sources */,
+				03A794132B479EEC00EC7E9B /* MockHomePresenter.swift in Sources */,
+				03A794172B47A94600EC7E9B /* MockApiManager.swift in Sources */,
+				03A794152B479EF800EC7E9B /* MockHomeRouter.swift in Sources */,
+				03A7940F2B479ED000EC7E9B /* MockHomeViewController.swift in Sources */,
+				03A794112B479EE100EC7E9B /* MockHomeIntreactor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -848,7 +887,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -905,7 +944,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -991,17 +1030,25 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Q2M86HYN6F;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.afroz.ButterflyTestTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "ButterflyTestTests/HomeViewTest/ButterflyTestTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ButterflyTest.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ButterflyTest";
 			};
 			name = Debug;
@@ -1012,17 +1059,24 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Q2M86HYN6F;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.afroz.ButterflyTestTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "ButterflyTestTests/HomeViewTest/ButterflyTestTests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ButterflyTest.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ButterflyTest";
 			};
 			name = Release;

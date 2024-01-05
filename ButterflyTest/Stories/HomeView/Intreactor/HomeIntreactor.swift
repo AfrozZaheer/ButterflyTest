@@ -11,7 +11,7 @@ import Cache
 
 class HomeIntreactor: HomePresenterToItreatorProtocol {
     
-    let apiManager: MovieApiManagerProtocol
+    var apiManager: MovieApiManagerProtocol
     weak var presenter: HomeIntreactorToPresenterProtocol?
     
     init(apiManager: MovieApiManagerProtocol) {
